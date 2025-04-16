@@ -1,0 +1,61 @@
+# Android Studio
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# Gradle
+.gradle/
+build/
+*/build/
+
+# Local configuration file (SDK path, etc.)
+local.properties
+
+# Log files
+*.log
+
+# OS-specific
+.DS_Store
+Thumbs.db
+
+# Kotlin/Java compiled class files
+*.class
+*.jar
+*.war
+*.ear
+
+# IntelliJ
+out/
+
+# Android specific
+.cxx/
+*.apk
+*.ap_ 
+*.dex
+*.so
+*.db
+*.keystore
+*.jks
+*.hprof
+
+# Cache
+.cache/
+captures/
+output.json
+
+# Generated files
+gen/
+generated/
+
+# Dependency caches
+/.mvn/
+**/build/
+
+# Misc
+*.tmp
+*.swp
+*.swo
+
+# VS Code (por si lo usás ocasionalmente)
+.vscode/
