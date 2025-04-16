@@ -17,6 +17,9 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.example.lab04.ui.theme.Lab04Theme
 import androidx.compose.material3.ExperimentalMaterial3Api
+import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.unit.sp
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -55,7 +58,13 @@ fun MainContent(modifier: Modifier = Modifier) {
             .fillMaxSize()
             .padding(16.dp)
     ) {
-        Text(text = "¡Bienvenido!", style = MaterialTheme.typography.headlineSmall)
+        Text(
+            text = "Welcome to the Course!",
+            fontSize = 32.sp, // Cambiado de 28 a 32
+            fontWeight = FontWeight.ExtraBold, // Cambiado a ExtraBold
+            color = Color.Blue // Añadido color
+        )
+
 
         Spacer(modifier = Modifier.height(16.dp))
 
