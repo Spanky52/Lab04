@@ -15,10 +15,8 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import androidx.compose.ui.unit.sp
 import com.example.lab04.ui.theme.Lab04Theme
 import androidx.compose.material3.ExperimentalMaterial3Api
-import androidx.compose.ui.text.font.FontWeight
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -31,7 +29,6 @@ class MainActivity : ComponentActivity() {
         }
     }
 }
-
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun MainScreen() {
@@ -58,11 +55,6 @@ fun MainContent(modifier: Modifier = Modifier) {
             .fillMaxSize()
             .padding(16.dp)
     ) {
-        // Aquí agregamos la nueva vista
-        ViewHolaCurso()
-
-        Spacer(modifier = Modifier.height(24.dp))
-
         Text(text = "¡Bienvenido!", style = MaterialTheme.typography.headlineSmall)
 
         Spacer(modifier = Modifier.height(16.dp))
@@ -76,27 +68,6 @@ fun MainContent(modifier: Modifier = Modifier) {
         Text(text = "Personajes:", style = MaterialTheme.typography.bodyLarge)
 
         CharacterImageCarousel()
-    }
-}
-
-@Composable
-fun ViewHolaCurso() {
-    Column(
-        modifier = Modifier
-            .fillMaxWidth()
-            .padding(16.dp),
-        horizontalAlignment = Alignment.CenterHorizontally
-    ) {
-        Text(
-            text = "Welcome to the Course!",
-            fontSize = 28.sp,
-            fontWeight = FontWeight.Bold
-        )
-        Spacer(modifier = Modifier.height(16.dp))
-        Text(
-            text = "Hello, Student!",
-            fontSize = 20.sp
-        )
     }
 }
 
